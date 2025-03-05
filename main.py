@@ -2,7 +2,7 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
-
+#version #0.1.0
 
 # Экземпляры бота и диспетчера
 bot = Bot(token=TOKEN)
