@@ -2,25 +2,32 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
-#version #0.1.0
 
-# Экземпляры бота и диспетчера
+# тест
+from handlers import set_commands
+
+# Экземпляр бота и диспетчера
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
 
-# бот принимает команды например /start
+#Бот принимает команды, например /start.
 # Создадим хендлер - обработчик сообщений, и будем возвращать сообщение
-@dp.message(Command("start"))
+@dp.message(Command('start'))
 async def process_start_command(message):
-    await message.answer("Привет!")
+  await message.answer("Привет!")
 
 
 @dp.message()
 async def echo_message(message):
     await message.answer(message.text)
 
-
+# функция запуска проекта
 async def main():
+
+    # вызов меню команд
+    await set_commands(bot=bot)
+
+    # поллинг
     await dp.start_polling(bot)
 
 
