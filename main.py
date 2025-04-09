@@ -15,6 +15,7 @@ async def main():
     bot = Bot(token=TOKEN)
     dp = Dispatcher()
 
+
     # Здесь функция для вызова хендлеров из handlers.py
     register_message_handlers()
 

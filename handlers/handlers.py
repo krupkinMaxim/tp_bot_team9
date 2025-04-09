@@ -1,4 +1,5 @@
 __all__ = [
+
     'register_message_handlers'
 ]
 
@@ -14,10 +15,19 @@ from aiogram.filters import Command
 from .keyboard import keyboard  # импорт из клавиатур
 from .callbacks import callback_message  # импорт из коллбека
 
+router = Router()
 
+@router.message(Command("start"))
 async def process_start_command(message: types.Message):
-    '''Команда start'''
     await message.answer(text="Привет!")
+
+@router.message(Command("help"))
+async def process_help_command(message: types.Message):
+    await message.answer(text="помоги")
+
+@router.message(Command("status"))
+async def process_status_command(message: types.Message):
+    await message.answer(message.from_user.user_id, message.from_user.user_name)
 
 
 # Здесь описывается маршрутизация
