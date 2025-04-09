@@ -3,6 +3,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
 
+
 # Экземпляр бота и диспетчера
 bot = Bot(token=TOKEN)
 dp = Dispatcher()
@@ -20,6 +21,11 @@ async def echo_message(message):
 
 # функция запуска проекта
 async def main():
+
+    # вызов меню команд
+    await set_commands(bot=bot)
+
+    # поллинг
     await dp.start_polling(bot)
 
 
