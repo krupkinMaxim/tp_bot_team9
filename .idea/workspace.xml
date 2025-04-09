@@ -4,8 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="efe34a5b-3c64-42f9-88d2-48ba8a4a15a3" name="Changes" comment="Добавили один новый тест">
-      <change beforePath="$PROJECT_DIR$/handlers/handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers.py" afterDir="false" />
+    <list default="true" id="efe34a5b-3c64-42f9-88d2-48ba8a4a15a3" name="Changes" comment="начал работу с маршрутизацией">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/tp_bot_team9.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/logging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/bot_commands.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/bot_commands.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/keyboard.py" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/keyboard.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
@@ -43,7 +51,7 @@
     "Python.main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "develop"
+    "git-widget-placeholder": "Merging develop"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -179,7 +187,23 @@
       <option name="project" value="LOCAL" />
       <updated>1744217376332</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="--">
+      <option name="closed" value="true" />
+      <created>1744217571982</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1744217571982</updated>
+    </task>
+    <task id="LOCAL-00013" summary="начал работу с маршрутизацией">
+      <option name="closed" value="true" />
+      <created>1744217609410</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1744217609410</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -205,6 +229,8 @@
     <MESSAGE value="Поправили ошибку в dockerfile" />
     <MESSAGE value="Добавил новый шаблон" />
     <MESSAGE value="Добавили один новый тест" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавили один новый тест" />
+    <MESSAGE value="--" />
+    <MESSAGE value="начал работу с маршрутизацией" />
+    <option name="LAST_COMMIT_MESSAGE" value="начал работу с маршрутизацией" />
   </component>
 </project>
