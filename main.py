@@ -4,6 +4,7 @@ from aiogram.filters import Command
 from config import TOKEN
 from handlers.bot_commands import set_commands
 from handlers import router
+from utils import setup_logger
 
 
 # функция запуска проекта
@@ -15,6 +16,9 @@ async def main():
 
     # вызов меню  команд
     await set_commands(bot=bot)
+
+    #настройка логирования
+    setup_logger(fname= __name__)
 
     # поллинг
     await dp.start_polling(bot)
