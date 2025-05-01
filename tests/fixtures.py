@@ -57,4 +57,4 @@ def mock_message():
 def mock_router():
     """Mock роутер"""
     router = Router()
-    return routergit push origin
+    return router
