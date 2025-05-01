@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import AsyncMock, patch
 from aiogram.types import Message
 from aiogram import Router
-
+from aiogram.types import CallbackQuery
 
 # Фикстуры в pytest позволяют выносить в отдельные функции типовые действия
 # например: настройка тестового окружения, создание тестовых данных, выполнение завершающие действия
@@ -51,6 +51,14 @@ def mock_message():
     mock_msg.from_user.id = AsyncMock()
     mock_msg.from_user.username = AsyncMock()
     return mock_msg
+
+
+@pytest.fixture
+def mock_callback(mock_message):
+    """Создает мок объекта CallbackQuery с прикрепленным моком Message"""
+    callback = AsyncMock(spec=CallbackQuery)
+    callback.message = mock_message
+    return callback
 
 
 @pytest.fixture
