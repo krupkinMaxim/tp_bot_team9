@@ -1,5 +1,3 @@
-from gc import callbacks
-
 import pytest
 from unittest.mock import AsyncMock, patch
 from aiogram.types import Message
@@ -60,4 +58,3 @@ def mock_router():
     """Mock роутер"""
     router = Router()
     return router
-
