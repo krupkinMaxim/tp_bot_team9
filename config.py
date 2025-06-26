@@ -1,9 +1,7 @@
-from dotenv import load_dotenv
 import os
+from dotenv import load_dotenv
 
-load_dotenv()  # take environment variables from .env.
+load_dotenv()  # Загружаем .env
 
-# Code of your application, which uses environment variables (e.g. from `os.environ` or
-# `os.getenv`) as if they came from the actual environment.
-
-TOKEN:str = os.getenv("TOKEN")
+TOKEN = os.getenv("TOKEN")
+CMC_API_KEY = os.getenv("CMC_API_KEY")

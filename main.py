@@ -2,9 +2,11 @@ import asyncio
 from aiogram import Bot, Dispatcher
 from aiogram.filters import Command
 from config import TOKEN
+from config import CMC_API_KEY
 from handlers.bot_commands import set_commands
 from handlers import router
 from utils import setup_logger
+
 
 
 # функция запуска проекта
